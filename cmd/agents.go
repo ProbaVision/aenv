@@ -9,12 +9,12 @@ import (
 )
 
 func init() {
-	rootCmd.AddCommand(checkCmd)
+	rootCmd.AddCommand(agentsCmd)
 }
 
-var checkCmd = &cobra.Command{
-	Use:   "check",
-	Short: "Check local agent environment files",
+var agentsCmd = &cobra.Command{
+	Use:   "agents",
+	Short: "List local agent environment files",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		home, err := os.UserHomeDir()
 		if err != nil {
