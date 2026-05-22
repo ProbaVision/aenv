@@ -1,0 +1,14 @@
+- command: aenv -h
+  description: Display help information about agent env setup.
+- command: aenv check
+  description: check home folder, agents.md, claude.md, and agent cli hidden subfolders, .claude and .agent.
+  output-format: yaml
+  output-sample:
+    - path: $HOME/.claude
+      agent: claude code
+    - path: $HOME/.copilot
+      agent: copilot 
+    - path: $HOME/agents.md
+      agent: open source
+- command: aenv completion
+  description: cobra built in command to generate shell completion scripts for zsh, bash, and fish.

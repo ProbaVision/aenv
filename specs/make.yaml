@@ -1,0 +1,4 @@
+- command: make test
+- command: make build
+  description: make build the binary to ./bin
+- command: make install
